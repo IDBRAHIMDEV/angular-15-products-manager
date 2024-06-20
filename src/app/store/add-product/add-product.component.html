@@ -1,0 +1,55 @@
+
+
+<h1 class="text-3xl my-2 mx-4">Add Product</h1>
+
+<div class="text-sm breadcrumbs mb-6 mx-4">
+    <ul>
+      <li><a routerLink="/products">Home</a></li> 
+      <li><a routerLink="/products/list">Store</a></li> 
+      <li>New product</li>
+    </ul>
+  </div>
+
+  <form [formGroup]="productForm"  (ngSubmit)="submitProduct()">
+      <div class="flex mx-auto justify-center  my-3">
+    
+          <label class="form-control w-full max-w-xs">
+            <div class="label">
+              <span class="label-text">Label</span>
+            </div>
+            <input formControlName="label" type="text" placeholder="Label of Product..." class="input input-bordered w-full max-w-xs" />
+            <div *ngIf="label?.invalid && (label?.touched || label?.dirty)">
+              <span *ngIf="label?.errors?.['required']" class="label-text-alt text-red-500">Le libellé est requis.</span>
+              <span *ngIf="label?.errors?.['minlength']" class="label-text-alt text-red-500">Le libellé doit comporter au moins 3 caractères.</span>
+            </div>
+          </label>
+      </div>
+    
+      <div class="flex mx-auto justify-center my-3">
+    
+        <label class="form-control w-full max-w-xs">
+          <div class="label">
+            <span class="label-text">Thumbnail Url</span>
+          </div>
+          <input formControlName="thumbnail" type="url" placeholder="Image url of Product..." class="input input-bordered w-full max-w-xs" />
+          <div *ngIf="thumbnail?.invalid && (thumbnail?.touched || thumbnail?.dirty)">
+            <span *ngIf="thumbnail?.errors?.['required']" class="label-text-alt text-red-500">Url est requis.</span>
+            <span *ngIf="thumbnail?.errors?.['pattern']" class="label-text-alt text-red-500">Url est invalide.</span>
+          </div>
+        </label>
+    </div>
+    
+    <div class="flex mx-auto justify-center  my-3">
+    
+        <label class="form-control w-full max-w-xs">
+          <div class="label">
+            <span class="label-text">Price</span>
+          </div>
+          <input formControlName="price" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+        </label>
+    </div>
+    
+    <div class="flex justify-center  my-9">
+       <button class="btn btn-outline btn-success btn-wide">Save</button>
+    </div>
+  </form>

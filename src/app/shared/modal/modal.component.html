@@ -1,0 +1,9 @@
+<div class="modal" [ngClass]="{'modal-open': isOpen}">
+    <div class="modal-box">
+      <h3 class="font-bold text-lg">{{ title }}</h3>
+      <div class="modal-action">
+        <button class="btn btn-error" (click)="sendRef()">Delete</button>
+        <button class="btn" (click)="close()">Close</button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "label": "Learn Django L1",
+      "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/PU65W4VzTB205p8JT7PG",
+      "price": "98",
+      "id": "8998"
+    },
+    {
+      "label": "Learn Django L2",
+      "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/qq7I5yr4QvqfVAMKQG1K",
+      "price": "44",
+      "id": "defe"
+    },
+    {
+      "id": "3593",
+      "label": "Learn Python",
+      "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/TZLXpJ9ORhmBgJUs1v5A",
+      "price": "34"
+    },
+    {
+      "id": "9393",
+      "label": "Learn Javascript",
+      "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/7zQdVPcjSnGj7TCSIF5P",
+      "price": "35"
+    },
+    {
+      "id": "4aa2",
+      "label": "Learn Laravel",
+      "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/TJsOPOnzRqOUQNT2gn1w",
+      "price": "56"
+    },
+    {
+      "id": "9b00",
+      "label": "Learn GraphQL",
+      "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/kaxv1R7PQPgVsvTnYuZM",
+      "price": "24"
+    }
+  ]
+}
