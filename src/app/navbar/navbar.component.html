@@ -17,7 +17,11 @@
         <li><a routerLink="/products/list">Store</a></li>
       </ul>
     </div>
-    <div class="navbar-end">
-      <a routerLink="/products/add" class="btn btn-outline btn-warning">Add</a>
+    <div class="navbar-end" *ngIf="isAuthenticated">
+      <a routerLink="/products/add" class="btn btn-sm btn-outline btn-warning">Add</a>
+      <app-user-menu (deconnect)="logout()"></app-user-menu>
+    </div>
+    <div class="navbar-end" *ngIf="!isAuthenticated">
+      <button (click)="login()" class="btn btn-sm btn-warning">Login</button>
     </div>
   </div>
